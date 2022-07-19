@@ -1,0 +1,31 @@
+{
+  "name": "origen",
+  "version": "1.0.0",
+  "description": "¿Qué productos o servicios brindará nuestro sitio?  Ofrecemos productos de jardinería, entre los que se encuentran todo tipo de accesorio para poder trabajar la materia. ¿Quién será nuestra audiencia objetivo? Amantes de las plantas de todas las edades. ¿Cómo ajustaremos nuestra oferta a ese público?",
+  "main": "app.js",
+  "nodemonConfig": {
+    "ext": "js,html, css"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js "
+  },
+  "keywords": [],
+  "test": "mocha --exit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphanetEX/Sprint2ADAMS.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/alphanetEX/Sprint2ADAMS/issues"
+  },
+  "homepage": "https://github.com/alphanetEX/Sprint2ADAMS#readme"
+}
