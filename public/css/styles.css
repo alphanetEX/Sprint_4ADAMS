@@ -334,6 +334,7 @@ div .info-derecha{
     flex-direction: column;
     align-items: flex-start;
     margin-left: 0%;
+    padding-left: 5%;
     
 }
 div .info-derecha p{
