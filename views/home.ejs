@@ -1,45 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Un mundo donde tambien el triple impacto es negocio">
-        <meta name="robots" content="index,follow">  
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="/css/styles.css">
-        <title>Adams Garden</title>
+        <%- include('head'); -%>
     </head>
     <body>
         <header>
-        <nav>  
-            <img src="/images/menu.svg" alt="menu" class="menu"> 
-            <div class="navbar-left" >
-                <a href="/"> <img src="/images/AdamsLogo.svg" alt="logo" class="logo"></a>
-                <ul> 
-                    <li><a href="/"> Home </a></li>
-                    <li><a href="/detalle"> Productos </a></li>
-                    <li><a href="/detalle"> Marcas </a></li>
-                    <li><a href="/registro"> Registro </a></li>
-                </ul>
-            </div>
-            <div class="navbar-right">
-                <ul>
-                    <li class="navbar-login"><a href="/loggin"> Ingresá </a></li>
-                    <li class="user">
-                        <img src="/images/user.svg" alt="user" class="user" style="width: 30px;">
-                    </li>
-                    <li class="navbar-shopping-cart"> 
-                        <a href="/carrito">
-                            <img src="/images/shoppingCar.svg" alt="shopping-card" style="width: 30px;" >
-                        </a>
-                        <div>2</div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        </header> 
+            <%- include('header'); -%>
+             </header>
         <section class="banner">
             <div>
                 <img src="/images/Banner.jpg" alt="Banner de ofertas">
@@ -93,27 +60,7 @@
             </section>
         </main>  
         <footer>
-            <div class="footer">
-                <article class="planta">
-                    <a href="/"><img src="/images/allForPlants-01.svg" alt="Logo Adam's Garden"></a>
-                </article>
-            </div>
-            <div class="footer">
-                <article class="redes">
-                    <h5>Seguinos en Redes Sociales</h5>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                </article>    
-            </div>
-            <div class="footer">
-                <h5>Contactanos</h5><i class="fab fa-whatsapp"></i>
-            </div>    
-            <article>
-                <div class="footer">
-                    <p class="copyright">Copyright © 2022 </p>
-                </div> 
-            </article>
-        </footer> 
+            <%- include('footer'); -%>
+           </footer>
     </body>
 </html>

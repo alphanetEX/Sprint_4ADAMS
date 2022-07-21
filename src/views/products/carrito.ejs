@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <%- include('head'); -%>
+    </head>
+    <body>
+        <header>
+        <%- include('header'); -%>
+         </header>
+        <main>
+            <h4>Tu Carrito</h4>
+            <div class="carrito">
+                <table class="cart-table">
+                <thead>
+                    <tr>
+                        <td class="cart-table-products">Producto</td>
+                        <td class="cart-table-description">Detalle</td>
+                        <td class="cart-table-price">Precio</td>
+                        <td class="cart-table-quantity">Cantidad</td>
+                        <td class="cart-table-total">Total</td>
+                        <td class="cart-table-delete"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="cart-table-image"><img src="/images/limon.jpg" alt="Imagen de producto"></td>
+                        <td class="cart-table-description">Limón 4 estaciones</td>
+                        <td class="cart-table-price">$2.500</td>
+                        <td class="cart-table-quantity">
+                            <input type="number" class="product-quantity" name="product-quantity" placeholder="1">
+                        </td>
+                        <td class="cart-table-total">$2.500</td>
+                        <td class="cart-table-delete">
+                            <a href="#"><i class="far fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="cart-bottom">
+                <div class="total-price-container">
+                    <div class="total-price">
+                        <p> Precio total : $2.500 </p>
+                    </div>
+                </div>
+                <div class="confirm-cart">
+                    <button type="submit"><i class="fas fa-angle-double-left"></i> Seguir comprando</button>
+                    <button type="submit">Confirmar</button>
+                </div>
+            </div>
+
+        </main>  
+        <footer>
+            <%- include('footer'); -%>
+           </footer>
+    </body>
+</html>
