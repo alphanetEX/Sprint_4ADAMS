@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-    <body>
-        <head>
-            <%- include('head'); -%>
-        </head>
+<%- include('../partials/head.ejs') %>
         <header>
-            <%# comment %> aca va el navbar; <%/* comment */%>
-            <%- include('header'); -%>
+            <%- include('../partials/header.ejs') %> 
         </header> 
         <section class="banner">
             <div>
@@ -60,9 +54,9 @@
                 </div>
             </section>
         </main>  
-        <%# comment %> aca va el footer; <%/* comment */%> 
+        
         <footer>
-        <%- include('footer'); -%>
+            <%- include('../partials/footer.ejs')%> 
        </footer>
     </body>
 </html>
