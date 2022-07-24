@@ -10,51 +10,13 @@
         <main>
             <section class="destacados">
                 <h3>DESTACADOS</h3>
-             
-                <div class="productos" >
-                    <article>
-                        <a href="/detalle"> 
-                        <figure>
-                            <img src="/images/limon.jpg" class="product_img" width="250px" alt="Limón 4 estaciones">
-                        </figure>
-                        </a>
-                        <div class="main-article">
-                            <i class="fas fa-shopping-cart"></i>
-                            <div class="price-and-discount">
-                                <p class="price">$2.500</p>
-                            </div>
-                            <h4 class="description">Limón 4 estaciones</h4>
-                        </div>
-                    </article>
-           
-                    <article>
-                        <figure>
-                            <img src="/images/Jazmin-kimura.jpg" class="product_img" min-width="250px" alt="Jazmín Kimura">
-                        </figure>
-                        <div class="main-article">
-                            <i class="fas fa-shopping-cart"></i>
-                            <div class="price-and-discount">
-                                <p class="price">$1.500</p>
-                            </div>
-                            <h4 class="description">Jazmín Kimura</h4>
-                        </div>
-                    </article>
-                    <article>
-                        <figure>
-                            <img src="/images/pino.jpg" class="product_img" width="250px" alt="Pino">
-                        </figure>
-                        <div class="main-article">
-                            <i class="fas fa-shopping-cart"></i>
-                            <div class="price-and-discount">
-                                <p class="price">$700</p>
-                            </div>
-                            <h4 class="description">Pino</h4>
-                        </div>
-                    </article>
+                <div class="productos" >    
+                <% plantas.forEach(planta => { %>
+                    <%- include('../partials/plantas.ejs',{planta}) %>
+                <% }) %>
                 </div>
             </section>
         </main>  
-        
         <footer>
             <%- include('../partials/footer.ejs')%> 
        </footer>

@@ -6,8 +6,7 @@ const mainController = {
         res.render('home', {
             plantas: plantas,
         })
-    }
-
+    },
 };
 
 
