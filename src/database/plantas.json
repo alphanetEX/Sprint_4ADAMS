@@ -5,6 +5,7 @@
         "price": "$2.500",
         "color-maceta" : "black",
         "category": "in-sale",
+        "description": "Limón 4 estaciones. Ideal para jardines grandes.",
         "image": "/images/limon.jpg"
     },
     {
@@ -13,6 +14,7 @@
         "price": "$1.500",
         "color-maceta" : "black",
         "category": "in-sale",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image": "/images/Jazmin-kimura.jpg"
     },
     {
@@ -21,6 +23,7 @@
         "price": "$700",
         "color-maceta" : "black",
         "category": "in-sale",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image": "/images/pino.jpg"     
     },
     {
@@ -29,6 +32,7 @@
         "price": "$180",
         "color-maceta" : "black",
         "category": "in-sale",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image": "/images/lavanda.jpg"     
     },   
     {
@@ -37,6 +41,7 @@
         "price": "$140",
         "color-maceta" : "black",
         "category": "in-sale",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image": "/images/flor-de-azucar.jpg"     
     },     
     {
@@ -45,6 +50,7 @@
         "price": "$590",
         "color-maceta" : "black",
         "category": "in-sale",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image": "/images/erica-carnea.jpeg"   
     },
     {
@@ -53,6 +59,7 @@
         "price": "$920",
         "color-maceta" : "black",
         "category": "relacionados",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image": "/images/loremImage.jpg"   
     },
     {
@@ -61,6 +68,7 @@
         "price": "$501",
         "color-maceta" : "black",
         "category": "relacionados",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image": "/images/loremImage.jpeg"   
     },
     {
@@ -69,6 +77,7 @@
         "price": "$580",
         "color-maceta" : "black",
         "category": "relacionados",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image": "/images/loremImage.jpeg"   
     }
 ]
