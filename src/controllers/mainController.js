@@ -9,6 +9,20 @@ const mainController = {
             plantas: in_sale,
         })
     },
+    loggin: function (req, res){
+        res.render('users/loggin', {
+
+        })
+    },
+
+    register: function (req, res){
+        res.render('users/registro',{
+
+        })
+    },
+    shopcar: function(req, res){
+        res.render('products/carrito')
+    }
 };
 
 
