@@ -4,7 +4,7 @@ const path = require('path');
 
 
 const modelController = function (name) {
-    console.log('entre al modelo de Mercado')
+    console.log('entre al modelo de plantas')
     console.log(name)
     console.log(path.resolve(__dirname, '../database/', `${name}.json`))
     return {
