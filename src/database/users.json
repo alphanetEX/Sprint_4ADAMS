@@ -1,0 +1,29 @@
+[{
+    "id" :"1",
+    "name": "Delfina",
+    "apellido" : "Insua",
+    "email" : "delfi@dh.com",
+    "password" : "admin", 
+    "category" : "admin", 
+    "img" : "/images/users/asd.jpg"
+},
+{
+    "id" :"2",
+    "name": "andrea",
+    "apellido" : "negri",
+    "email" : "angegrip@dh.com",
+    "password" : "user", 
+    "category" : "user", 
+    "img" : "/images/users/asdfg.jpg"
+},
+{
+    "id" :"2",
+    "name": "anderson",
+    "apellido" : "andrade",
+    "email" : "aandx@dh.com",
+    "password" : "user", 
+    "category" : "user", 
+    "img" : "/images/users/assadkpsa.jpg"
+}
+]
+
