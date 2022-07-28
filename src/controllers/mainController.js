@@ -1,4 +1,3 @@
-const plantas = require('../database/plantas.js');
 const jsonDB = require('../model/jsonDatabase');
 const productModel = jsonDB('plantas');
 
@@ -14,7 +13,6 @@ const mainController = {
 
         })
     },
-
     register: function (req, res){
         res.render('users/registro',{
 
