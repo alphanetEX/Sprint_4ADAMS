@@ -11,6 +11,7 @@ const controller = {
 		})
 	},
 
+
 	// // Create - Form to create
 	// create: (req, res) => {
 	// 	res.render('product-create-form')

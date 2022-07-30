@@ -4,87 +4,83 @@
             <%- include('../partials/header.ejs') %> 
              </header>
         <main>
-            <section class="prod-selec">
-                <h3 class="nombre-producto">LIMÓN GÉNOVA 4 ESTACIONES</h3>
-                <div class="producto">
+    <section class="prod-selec">
+        <h3 class="nombre-producto"><%= product.name %></h3>
+            <div class="producto">
                 <div class="info-izq">  
-                        <figure>
-                            <img src=<%= product.image %> class="product_img" width="120%" alt="<%= product.name %>">
-                        </figure>
-                        </div>
-                        <div class="info-derecha">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <div class="price-and-discount">
-                                <h4 class="precio">Precio:</h4>
-                                <p class="price"><%= product.price %></p>
-                            </div>
-                            <p class="description"><%= product.description %></p>
-                        </div>
+                    <figure>
+                        <img src=<%= product.image %> class="detail_img"  width="80%" alt="<%= product.name %>">
+                    </figure>
+                    <h4 class="description"><%= product.description %></h4>
+                </div>
+                <div class="info-derecha">
+                <div class="main-article-carrito">
+                    <h5 class="price"> Precio: <%= product.price %></h5>
+                </div>
                         
-                        <div class="form-compra">
-                            <form action="/app.js" method="get">
-                                <div class="color-produc">
-                                    <label for="color">Color:</label>
-                                    <select name="color">
-                                        <option value="red">Rojo</option>
-                                        <option value="green">Verde</option>
-                                        <option value="sky blue">Celeste</option>
-                                    </select>
-                                </div>
-                                <div class="tamaño-product">
-                                    <label for="tamaño">Tamaño:</label>
-                                    <select name="tamaño">
-                                        <option value="1">Mini</option>
-                                        <option value="2">Mediana</option>
-                                        <option value="3">Grande</option>
-                                    </select>
-                                </div>
-                                <div class="agregar-carrito">
-                                    <button type="submit">Agregar al carrito</button>
-                                </div>
-                            </form>
-                            </div>
+                <div class="form-compra">
+                    <form action="/app.js" method="get">
+                        <div class="color-produc">
+                            <label for="color">Color:</label>
+                            <select name="color">
+                                <option value="red">Rojo</option>
+                                <option value="green">Verde</option>
+                                <option value="sky blue">Celeste</option>
+                            </select>
                         </div>
-                    </div>
-                    
-                    <h3 class="titulo-prod-rel">Productos relacionados</h3>
-                        <div class="productos-rel">
-                            <article>
-                                <figure>
-                                     <img src="/images/lavanda.jpg" class="product_img" width="90%" alt="lavanda dentata">
-                                </figure>
-                                <div class="main-article">
-                                    <i class="fas fa-truck"></i>            
-                                    <h4 class="description">Lavanda Dentata</h4>
-                                    <p class="price">$180</p>
-                                </div>
-                            </article>
-                            <article>
-                                <figure>
-                                    <img src="/images/flor-de-azucar.jpg" class="product_img" width="90%" alt="flor de azucar">
-                                </figure>
-                        <div class="main-article">
-                                <i class="fas fa-truck"></i>        
-                                    <h4 class="description">Flor de azúcar</h4>
-                                        <p class="price">$140</p>
-                        </div>                
-                        </article>
-                        <article>
-                                <figure>
-                                    <img src="/images/erica-carnea.jpeg" class="product_img" width="90%" alt="erica carnea">
-                                </figure>
-                                <div class="main-article">
-                                <i class="fas fa-truck"></i>
-                                    <h4 class="description">Erica carnea</h4>
-                                    <p class="price">$590</p>
-                                </div>                
-                        </article>
+                        <div class="tamaño-product">
+                            <label for="tamaño">Tamaño:</label>
+                                <select name="tamaño">
+                                    <option value="1">Mini</option>
+                                    <option value="2">Mediana</option>
+                                    <option value="3">Grande</option>
+                                </select>
                         </div>
-            </section>
-        </main>  
-        <footer>
-            <%- include('../partials/footer.ejs')%> 
-           </footer>
+                        <div class="agregar-carrito">
+                            <button class= "buy" type="submit">Agregar al carrito</button>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        <h3 class="nombre-producto">Productos relacionados</h3>
+        <div class="productos-rel">  
+            <article>
+                <figure>
+                     <img src="/images/lavanda.jpg" class="product_img" width="90%" alt="lavanda dentata">
+                </figure>
+                <div class="main-article">
+                    <i class="fas fa-truck"></i>            
+                        <h4 class="description">Lavanda Dentata</h4>
+                        <p class="price">$180</p>
+                </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="/images/flor-de-azucar.jpg" class="product_img" width="90%" alt="flor de azucar">
+                    </figure>
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>        
+                        <h4 class="description">Flor de azúcar</h4>
+                        <p class="price">$140</p>
+                    </div>                
+                </article>
+                <article>
+                    <figure>
+                        <img src="/images/erica-carnea.jpeg" class="product_img" width="90%" alt="erica carnea">
+                    </figure>
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <h4 class="description">Erica carnea</h4>
+                        <p class="price">$590</p>
+                    </div>                
+                </article>
+        </div>
+    </section>
+    </main>  
+    
+    <footer>
+        <%- include('../partials/footer.ejs')%> 
+    </footer>
     </body>
 </html>

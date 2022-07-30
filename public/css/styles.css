@@ -17,6 +17,10 @@
     box-sizing: border-box;   
 }
 
+header{
+    padding-top: 5px;
+}
+
 body{
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -119,7 +123,7 @@ nav {
 /* BANNER */
 section.banner div{
     width: 100%;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 section.banner div img{
@@ -131,7 +135,7 @@ section.banner div img{
 /*MAIN*/
 
 main{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -158,8 +162,10 @@ main section article figure {
 }
 
 .destacados h3{
-    color:#1a4809;
-    text-align: center;
+   text-align: center;
+    color: rgb(234, 243, 234);
+    font-weight: bold;
+    background-color: #2F552A;
 }
 
 article div.main-article{
@@ -193,6 +199,10 @@ article div.main-article i{
     color:#1a4809;
 }
 
+ h4 .name{
+    align-items: center;
+}
+
 article div.main-article h4{
     margin-top: 20px;
     color: #666;
@@ -202,10 +212,9 @@ article div.main-article h4{
 
 /* carrito */
 
-main{
+.main-carrito{
     padding: 10px;
     margin-top: 3em;
-    margin: 3em;
 }
 
 .carrito{
@@ -214,18 +223,16 @@ min-height: fit-content;
 }
 
 h4 {
-    display: flex;
     text-align: center;
-    color:#1a4809
+    color:#1a4809;
+    margin-bottom: 10px;
 }
-
 
 thead {
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
 }
-
 
 .carrito {
     overflow-x: auto;
@@ -309,60 +316,70 @@ div .cart-bottom {
 
 
 /*DETALLE DE PRODUCTO*/
-h3{
-    text-align: center;
-    color: rgb(0, 75, 0);
-    font-style: oblique;
-    font-weight: bold;
 
+h3.nombre-producto{
+    text-align: center;
+    color: rgb(234, 243, 234);
+    font-weight: bold;
+    background-color: #2F552A;
+}
+
+h3 .nombre-producto {
+    color: #ACD9B2;
+    background-color: #2F552A;
 }
 
 .producto{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 10px;
 }
+
+article .detail{
+    margin: 3em;
+}
+
 div .info-izq{
     display: flex;
-    flex-direction: row;
-    margin-right: 15%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div .info-izq h5{
+    color:#2F552A;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.detail_img{
+    margin-left: 1em;
 }
 
 div .info-derecha{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin-left: 0%;
     padding-left: 5%;
-    
 }
-div .info-derecha p{
-    font-size: var(--sm);
-    
-}
+
 div .info-derecha h4{
     font-weight: bold;
     color:rgb(0, 49, 0);
     margin-top: 5%;
     margin-bottom: 0%;
     margin-left: 5%;
-    font-size: large;
 }
 
 div .info-derecha .price{
-    font-size: large;
     margin-top: 0%;
-}
-
-div .info-derecha .description{
-    font-size: large;
+    color:rgb(0, 49, 0);
 }
 
 div .form-compra form{
     margin-top: 20%;
     margin-bottom: 10%;
-    font-size: medium;
+    color:rgb(0, 49, 0);
 }
 
 div .color-produc{
@@ -370,7 +387,7 @@ div .color-produc{
     flex-direction: column;
     margin-top: 5%;
     margin-bottom: 15%;
-    font-size: medium;
+    color:rgb(0, 49, 0);
 }
 
 div .tamaño-product{
@@ -378,24 +395,17 @@ div .tamaño-product{
     flex-direction: column;
     margin-top: 5%;
     margin-bottom: 30%;
-    font-size: medium;
 }
 
 div .agregar-carrito button{
-    color:rgb(0, 75, 0);
-    background-color: #a1ee5d;
-    font-size: medium;
-    border-color: rgb(0, 75, 0);
+    color:rgb(234, 243, 234);
+    background-color: rgb(0, 75, 0);
+    border-color: transparent;
     border-radius: 5%;
 }
 div .agregar-carrito button:hover{
     font-weight: bold;
     background-color: #8dd252;
-}
-
-
-h3 .titulo-prod-rel{
-    text-align: center;
 }
 
 .productos-rel{
@@ -598,6 +608,7 @@ footer section p.copyright {
 
 
 
+
 @media (max-width: 480px){
     .productos-rel{
         display: flex;
@@ -661,8 +672,15 @@ footer section p.copyright {
 
 }
 
-
+.redes{
+    margin-left: -150%;
 }
+
+.planta img{
+    margin-left: -80%;
+}
+}
+
 
 
 @media (max-width: 680px){
@@ -690,6 +708,8 @@ footer section p.copyright {
     }
     
     div .info-izq {
+        display:flex;
+        flex-direction: column;
         margin-right: 5%;
         margin-left: 0%;
     }
@@ -715,10 +735,18 @@ footer section p.copyright {
         align-items: flex-start;
     }
 
+    .main-carrito{
+        margin-bottom: 20em;
+    }
+
     /*carrito*/
 .cart-bottom .confirm-cart button{
     position: relative;
     left: 47em;
+}
+
+.planta img{
+    margin-left: -125%;
 }
 
 }

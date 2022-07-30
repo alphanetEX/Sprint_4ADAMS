@@ -1,0 +1,14 @@
+<article>
+    <a href="/productos/detalle/<%= product.id %>"> 
+<figure>
+    <img src=<%= product.image %>  class="product_img" width="250px" alt="<%= product.name %>" >
+</figure>
+</a>
+<div class="main-article">
+    <i class="fas fa-shopping-cart"></i>
+    <div class="price-and-discount">
+        <p class="price"><%= product.price %> </p>
+    </div>
+    <h4 class="description"><%= product.name %></h4>
+</div>
+</article>

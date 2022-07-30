@@ -1,14 +1,15 @@
 <article>
-    <a href="/productos/detalle/<%= planta.id %>"> 
+    <a href="/productos/detalle/<%= planta.id %>">
 <figure>
-    <img src=<%= planta.image %>  class="product_img" width="250px" alt="<%= planta.name %>" >
+    <img src=<%= planta.image %>  class="product_img" width="80%" alt="<%= planta.name %>" >
 </figure>
 </a>
+<h4 class="name"><%= planta.name %></h4> 
 <div class="main-article">
     <i class="fas fa-shopping-cart"></i>
     <div class="price-and-discount">
-        <p class="price"><%= planta.price %> </p>
+        <p class="price"><%= planta.price %> </p>  
     </div>
-    <h4 class="description"><%= planta.name %></h4>
+    <h4 class="description"><%= planta.description %></h4>
 </div>
 </article>
