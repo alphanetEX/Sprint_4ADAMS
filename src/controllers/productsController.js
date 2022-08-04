@@ -13,9 +13,9 @@ const controller = {
 
 
 	// // Create - Form to create
-	// create: (req, res) => {
-	// 	res.render('product-create-form')
-	// },
+	create: (req, res) => {
+	res.render('product-create-form')
+	},
 
 
 	// // Create -  Method to store
@@ -35,11 +35,11 @@ const controller = {
 	// // Update - Form to edit
 
 
-	// edit: (req, res) => {
-	// 	console.log('ESTOY USANDO EL EDIT DEL GENERICO')
-	// 	let productToEdit = productModel.find(req.params.id)
-	// 	res.render('product-edit-form', { productToEdit })
-	// },
+	edit: (req, res) => {
+	console.log('ESTOY USANDO EL EDIT DEL GENERICO')
+	let productToEdit = productModel.find(req.params.id)
+	res.render('product-edit-form', { productToEdit })
+	},
 
 	// // Update - Method to update
 
@@ -62,10 +62,10 @@ const controller = {
 	// },
 
 
-    // destroy: function(req,res){
-    //     productModel.delete(req.params.id);
-    //     res.redirect("/");
-    // }
+    destroy: function(req,res){
+         productModel.delete(req.params.id);
+         res.redirect("/");
+     }
 
 
 

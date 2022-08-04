@@ -1,11 +1,11 @@
 Retrospectiva ADAM’s Garden: 
 1.	Comenzar a hacer: 
     - Reuniones con mayor periodicidad
-    - Utilizar Trello 
 2.	Hacer más:
     - Comunicarnos
     - Priorización de los trabajos importantes
     - Prácticas con Git
+    - Utilizar Trello 
 3.	Continuar haciendo:
     - Foco en los detalles
     - Aprendiendo 
