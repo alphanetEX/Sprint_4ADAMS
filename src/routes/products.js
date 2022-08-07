@@ -14,9 +14,10 @@ router.get('/detalle/:id', productsController.detail);
 
 /*** EDIT ONE PRODUCT ***/ 
 router.get('/edit/:id',  productsController.edit); 
-router.put('/edit/:id', upload.array('image'), productsController.update);
+//router.put('/edit/:id', upload.array('image'), productsController.update);
 
 
+/**for fix */
 /*** DELETE ONE PRODUCT***/ 
 router.delete('/delete/:id', productsController.destroy); 
 

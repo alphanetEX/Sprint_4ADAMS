@@ -14,7 +14,7 @@ const controller = {
 
 	// // Create - Form to create
 	create: (req, res) => {
-	res.render('product-create-form')
+	res.render('products/product-create-form')
 	},
 
 
@@ -38,7 +38,7 @@ const controller = {
 	edit: (req, res) => {
 	console.log('ESTOY USANDO EL EDIT DEL GENERICO')
 	let productToEdit = productModel.find(req.params.id)
-	res.render('product-edit-form', { productToEdit })
+	res.render('products/product-edit-form', { productToEdit })
 	},
 
 	// // Update - Method to update
