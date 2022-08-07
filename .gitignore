@@ -4,3 +4,10 @@
 .snipet/
 package-lock.json
 snipet.log
+alphanet.pem
+docker-compose.yaml
+Dockerfile
+alpha.yaml
+.env*
+.env.project
+.env.vault

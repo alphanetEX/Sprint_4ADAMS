@@ -2,7 +2,7 @@ const express = require('express');
 const path =  require('path');
 const app = express(); 
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
-
+const config  = require('./src/config/index'); 
 //directions for views and styless
 const viewsPath = path.join(__dirname, '/src/views/');
 const publicPath = path.join(__dirname, 'public');
@@ -23,8 +23,6 @@ app.use('/', mainRouter);
 app.use('/productos', producsRouter);
 
 
-app.listen (process.env.PORT || 3001, ()=>{
-    console.log('Servidor funcionando bien');
+const server = app.listen ( config.port || 3002, ()=>{
+    console.log(`server listen of port: ${ server.address().port }`);
 });
-
-

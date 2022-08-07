@@ -2,7 +2,17 @@ const jsonDB = require('../model/jsonDatabase');
 const productModel = jsonDB('plantas');
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
+
+	
 const controller = {
+	
+	listAll: (req, res) => {
+		const products = productModel.all()
+		res.render('products/listado', {
+			plantas: products
+		})
+	}, 
+	
 	detail: (req, res) => {
 		const product = productModel.find(req.params.id)
 		res.render('products/detalle', {
@@ -20,16 +30,16 @@ const controller = {
 
 	// // Create -  Method to store
 	
-	// store: (req, res) => {
-	// 	// Atrapo todos los campos del formulario
-	// 	const newProduct = {
-	// 		...req.body,
-	// 		image: 'default-image.png'
-	// 	}
-	// 	productModel.create(newProduct)
-	// 	console.log('cree un nuevo producto')
-	// 	res.redirect('/')
-	// },
+	store: (req, res) => {
+		// Atrapo todos los campos del formulario
+		const newProduct = {
+			...req.body,
+			image: 'default-image.png'
+		}
+		productModel.create(newProduct)
+		console.log('cree un nuevo producto')
+		res.redirect('/')
+	},
 
 
 	// // Update - Form to edit

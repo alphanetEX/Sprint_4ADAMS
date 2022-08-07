@@ -1,0 +1,19 @@
+<%- include('../partials/head.ejs') %>
+        <header>
+            <%- include('../partials/header.ejs') %> 
+        </header> 
+        <main>
+            <section class="destacados">
+                <h3>Listado de productos</h3>
+                <div class="productos" >    
+                <% plantas.forEach(planta => { %>
+                    <%- include('../partials/plantas.ejs',{planta}) %>
+                <% }) %>
+                </div>
+            </section>
+        </main>  
+        <footer>
+            <%- include('../partials/footer.ejs')%> 
+       </footer>
+    </body>
+</html>

@@ -3,6 +3,7 @@ const router = express.Router();
 const productsController = require('../controllers/productsController');
 
 /*** LIST OF PRODUCTS ***/
+router.get('/', productsController.listAll);
 
 /*** CREATE ONE PRODUCT ***/
 router.get('/create', productsController.create);
@@ -15,7 +16,6 @@ router.get('/detalle/:id', productsController.detail);
 /*** EDIT ONE PRODUCT ***/ 
 router.get('/edit/:id',  productsController.edit); 
 //router.put('/edit/:id', upload.array('image'), productsController.update);
-
 
 /**for fix */
 /*** DELETE ONE PRODUCT***/ 
