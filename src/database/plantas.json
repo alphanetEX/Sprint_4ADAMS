@@ -31,7 +31,7 @@
         "name": "Lavanda dentada",
         "price": "$180",
         "color-maceta" : "black",
-        "category": "in-sale",
+        "category": "relacionados",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image": "/images/lavanda.jpg"     
     },   
@@ -40,7 +40,7 @@
         "name": "Flor de azúcar",
         "price": "$140",
         "color-maceta" : "black",
-        "category": "in-sale",
+        "category": "relacionados",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "image": "/images/flor-de-azucar.jpg"     
     },     
