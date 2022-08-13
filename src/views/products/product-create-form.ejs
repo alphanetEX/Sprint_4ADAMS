@@ -7,18 +7,19 @@
 	<%- include('../partials/header.ejs') %> 
 	<!-- /Header -->
 
-	<div class="container products-wrapper">
-		<div class="row">
+	<div class="creacion-producto">
+		<div class="titulo">
 			<div class="col-12">
 				<h2 class="products-title">Formulario de creación de productos</h2>
 			</div>
 		</div>
 		<div class="col-12">
+		<div class="form-creacion">
 			<form action="/products" method="POST" enctype="multipart/form-data">
 
-				<div class="row product-detail">
+				<div class="formdecreacion">
 
-					<div class="col-12 col-md-6">
+					<div class="nombre">
 						<label for="name" class="form-label">Nombre del producto:</label>
 
 						<% console.log("locals") %> 
@@ -39,7 +40,7 @@
 				
 
 				
-					<div class="col-12 col-md-6">
+					<div class="precio">
 						<label for="price" class="form-label">Precio del producto:</label>
 
 						<input 
@@ -55,7 +56,7 @@
 						<% } %>
 					</div>
 
-					<div class="col-12 col-md-6">
+					<div class="descuento">
 						<label for="discount" class="form-label">Descuento:</label>
 
 						<input 
@@ -72,9 +73,9 @@
 					</div>
 					
 
-					<div class="col-12 col-md-6">
+					<div class="imagen">
 						<label for="image" class="form-label">Foto:</label>
-
+						
 						<input type="file" id="image" name="image"
 						 	accept=".png, .jpeg, .jpg" 
 						  	placeholder="Ingrese una foto" 
@@ -118,7 +119,7 @@
 					
 					</div>					
 				
-					<div class="col-12">
+					<div class="descripcion">
 						<label for="description" class="form-label">Descripción:</label>
 						<textarea name="description" id="description" class="form-input"><%= locals.oldData ? oldData.description : null %></textarea>
 						<% if (locals.errors && errors.description) { %>
@@ -129,10 +130,11 @@
 					</div>
 
 					<div class="col-12">
-						<button type="submit" class="buy-now-button">Guardar producto</button>
+						<button type="submit" class="guardar-button">Guardar producto</button>
 					</div>
 				</div>
 			</form>
+		</div>
 		</div>
 
 	</div>

@@ -448,7 +448,42 @@ div .agregar-carrito button:hover{
     width: 300px;
   }
 
+  /* LISTADO DE PRODUCTOS*/
+
+  .listado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dddcdc;
+  }
+
+  .listado h3 {
+    padding: 1%;
+    font-size: 150%;
+    margin-top: 0%;
+  }
+
+  .listado .productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .planta-ind{
+    width: 200px;
+  }
+
+
+
+
+
+
+
   /*loggin area  and regist area*/
+
+  .login {
+    background-color: #dddcdc;
+  }
 
   .title {
     font-size: var(--lg);
@@ -524,6 +559,215 @@ div .agregar-carrito button:hover{
     margin-bottom: 30px;
   }
 
+  /*CREACION DE PRODUCTO */
+
+  .creacion-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dddcdc;
+
+    }
+    
+    .creacion-producto .titulo {
+        margin-top: 3%;
+
+    }
+
+    .form-creacion {
+        margin: 5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    
+
+    .form-creacion .nombre {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .form-creacion .precio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .form-creacion .imagen {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .form-creacion .form-file-input{
+        background-color: var(--text-input-field);
+        border: none;
+        border-radius: 8px;
+        height: 20%;
+        font-size: 75%;
+        padding: 2%;
+        margin-bottom: 1%;
+        margin-left: 11%;
+        
+    }
+
+    .form-creacion .form-input#category {
+        margin-left: 4%;
+        margin-top: 4%;
+        width: 70%;
+    }
+    .form-creacion .form-input#description {
+        margin-left: 6%;
+    }
+    .form-creacion .form-input#discount{
+        width: 220px;
+        margin-left: 3%;
+        margin-bottom: 5%;
+    }
+
+    .form-creacion .guardar-button {
+        background-color: #8dd252;
+        border-radius: 8px;
+        border: none;
+        color: var(--white);
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+        margin-left: 1%;
+        margin-right: 6%;
+        margin-top: 4%;
+        margin-bottom: 2%;
+        text-align: center;
+      }
+
+    
+
+
+/*EDICION DE PRODUCTO */
+
+.edicion-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dddcdc;
+}
+.edicion-producto .products-title {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.form-edicion {
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5%;
+    
+}
+.form-input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 25px;
+    font-size: var(--md);
+    padding: 4%;
+    margin-bottom: 4%;
+  }
+
+  .form-input#image {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 20%;
+    font-size: 75%;
+    padding: 2%;
+    margin-bottom: 5%;
+    margin-left: 13%;
+  }
+
+  .edicion-producto .form-input#price{
+    width: 90%;
+    margin-left: 2%;
+  }
+
+  .edicion-producto .form-input#name{
+    width: 90%;
+    margin-left: 1%;
+  }
+
+  .form-input#category {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+  }
+.descripcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}   
+.edicion-producto .nombre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.edicion-producto .precio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-input#description {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 40%;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+    margin-left: 2%;
+  }
+
+  .edicion-producto .form-input#discount {
+    margin-left: 3%;
+    margin-right: 0%;
+    width: 65%;
+  }
+
+  .edicion-producto .form-input#category {
+    margin-left: 5%;
+    width: 65%;
+  }
+
+  .form-label {
+    font-size: var(--sm);
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 4%;
+  }
+
+  .cont-form {
+    margin-bottom: 5%;
+  }
+
+  .guardar-button {
+    background-color: #8dd252;
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    margin-left: 1%;
+    margin-right: 6%;
+  }
 
 /* FOOTER */
 

@@ -3,14 +3,18 @@
             <%- include('../partials/header.ejs') %> 
         </header> 
         <main>
+            <div class="listado">
             <section class="destacados">
                 <h3>Listado de productos</h3>
                 <div class="productos" >    
                 <% plantas.forEach(planta => { %>
+                    <div class="producto">
                     <%- include('../partials/plantas.ejs',{planta}) %>
+                    </div>
                 <% }) %>
                 </div>
             </section>
+            </div>
         </main>  
         <footer>
             <%- include('../partials/footer.ejs')%> 

@@ -55,29 +55,29 @@
     },
     {
         "id": 7,
-        "name": "Lorem Ipsum",
+        "name": "Kalanoche Floral",
         "price": "$920",
         "color-maceta" : "black",
         "category": "relacionados",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "image": "/images/loremImage.jpg"   
+        "image": "/images/kalanoche-floral.jpeg"   
     },
     {
         "id": 8,
-        "name": "Lorem Ipsum",
+        "name": "Orquídea Cymbidium",
         "price": "$501",
         "color-maceta" : "black",
         "category": "relacionados",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "image": "/images/loremImage.jpg"   
+        "image": "/images/orquidea-cymbidium.jpeg"   
     },
     {
         "id": 9,
-        "name": "Lorem Ipsum",
+        "name": "Polygala",
         "price": "$580",
         "color-maceta" : "black",
         "category": "relacionados",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "image": "/images/loremImage.jpg"   
+        "image": "/images/polygala.jpg"   
     }
 ]
