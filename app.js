@@ -20,7 +20,7 @@ app.set('views', viewsPath);
 //rutas del main 
 app.use('/', mainRouter);
 //rutas de los productos 
-app.use('/productos', producsRouter);
+app.use('/products', producsRouter);
 
 
 const server = app.listen ( config.port || 3002, ()=>{
