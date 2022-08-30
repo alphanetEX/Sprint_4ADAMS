@@ -642,10 +642,31 @@ div .agregar-carrito button:hover{
         text-align: center;
       }
 
-    
+    /*CREATE*/
+
+.formdecreacion{
+    color:#2F552A;
+}
+
+.formdecreacion div{
+    display: flex;
+    align-content: initial;
+}
+
+.products-title{
+    color:#2F552A;
+}
+
+div.creacion-producto{
+    display: flex;
+}
 
 
 /*EDICION DE PRODUCTO */
+
+.edicion-producto{
+    color:#2F552A
+}
 
 .edicion-producto {
     display: flex;
@@ -660,7 +681,6 @@ div .agregar-carrito button:hover{
 
 .form-edicion {
     font-size: var(--sm);
-    text-align: center;
     text-decoration: none;
     margin-bottom: 5%;
     
